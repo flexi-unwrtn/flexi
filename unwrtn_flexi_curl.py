@@ -14,6 +14,6 @@ for row in reader:
     else:
         crow = dict(zip(headers, row))
         html = html + 'curl "https://api.scraperapi.com?key=c61b750a4bfe9cc35105129e8f646bfa&url=https://www.imdb.com/title/'+crow['Const']+'/" > '+crow['Const']+'.html\n'
-        f = open('flexi.html','w')
+        f = open('flexi.sh','w')
 f.write(html)
 f.close()
