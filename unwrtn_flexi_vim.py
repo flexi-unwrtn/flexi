@@ -13,7 +13,7 @@ for row in reader:
         headers = row
     else:
         crow = dict(zip(headers, row))
-        html = html + ':%s+href="/+href="https://www.imdb.com/+g |:/egin TOP_AD/,/nd TOP_AD/d |:/Next/ |:?href?s+https://www.imdb.com++ |:?Previous? |:?href?s+https://www.imdb.com++|:/Episode aired/ |:/    /s+    +\&nbsp;<span class="ghost">|</span>\&nbsp;<a target="_blank" href="https://d2uzw09ppuvr94.cloudfront.net/title/'+crow['Const']+'"><img src="https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png" style="vertical-align: bottom;" width="16" height="16"></a>+ |:wnext\n'
+        html = html + ':%s+href="/+href="https://www.imdb.com/+g\n:/egin TOP_AD/,/nd TOP_AD/d\n:/Next/\n:?href?s+https://www.imdb.com++\n:?Previous?\n:?href?s+https://www.imdb.com++\n:/Episode aired/\n:read ' +crow['Const']+'.c\n:wnext\n'
         f = open('flexi.html','w')
 f.write(html)
 f.close()
