@@ -13,7 +13,7 @@ for row in reader:
         headers = row
     else:
         crow = dict(zip(headers, row))
-        html = html + 'curl "https://api.scraperapi.com?key=c61b750a4bfe9cc35105129e8f646bfa&url=https://m.imdb.com/title/'+crow['Const']+'/" > '+crow['Const']+'.html&keep_headers=true\n'
+        html = html + 'curl "https://api.scraperapi.com?key=xxxxxxxxxx&url=https://m.imdb.com/title/'+crow['Const']+'&keep_headers=true" > '+crow['Const']+'.html\n'
         f = open('flexi.sh','w')
 f.write(html)
 f.close()
